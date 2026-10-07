@@ -1,0 +1,6 @@
+{
+  "name": "RFC GRILL RESTAURANT",
+  "description": "Pakistani Smokehouse in Shakargarh. Taste the flame with authentic charcoal BBQ, Karahi, Handi, Pizza, and Fast Food Deals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
