@@ -1,0 +1,253 @@
+{
+  "Shakes": [
+    "/src/assets/images/shakes-0.jpg",
+    "/src/assets/images/shakes-1.jpg",
+    "/src/assets/images/shakes-2.jpg",
+    "/src/assets/images/shakes-3.jpg",
+    "/src/assets/images/shakes-4.jpg",
+    "/src/assets/images/shakes-5.jpg",
+    "/src/assets/images/shakes-6.jpg",
+    "/src/assets/images/shakes-7.jpg",
+    "/src/assets/images/shakes-8.jpg",
+    "/src/assets/images/shakes-9.jpg"
+  ],
+  "Cocktail Drinks": [
+    "/src/assets/images/cocktail-drinks-0.jpg",
+    "/src/assets/images/cocktail-drinks-1.jpg",
+    "/src/assets/images/cocktail-drinks-2.jpg"
+  ],
+  "Coffee": [
+    "/src/assets/images/coffee-0.jpg",
+    "/src/assets/images/coffee-1.jpg",
+    "/src/assets/images/coffee-2.jpg",
+    "/src/assets/images/coffee-3.jpg",
+    "/src/assets/images/coffee-4.jpg",
+    "/src/assets/images/coffee-5.jpg",
+    "/src/assets/images/coffee-6.jpg",
+    "/src/assets/images/coffee-7.jpg"
+  ],
+  "Tea": [
+    "/src/assets/images/tea-0.jpg",
+    "/src/assets/images/tea-1.jpg",
+    "/src/assets/images/tea-2.jpg",
+    "/src/assets/images/tea-3.jpg"
+  ],
+  "Ice Cream": [
+    "/src/assets/images/ice-cream-0.jpg",
+    "/src/assets/images/ice-cream-1.jpg",
+    "/src/assets/images/ice-cream-2.jpg",
+    "/src/assets/images/ice-cream-3.jpg"
+  ],
+  "Salad & Raita": [
+    "/src/assets/images/salad-and-raita-0.jpg",
+    "/src/assets/images/salad-and-raita-1.jpg",
+    "/src/assets/images/salad-and-raita-2.jpg",
+    "/src/assets/images/salad-and-raita-3.jpg",
+    "/src/assets/images/salad-and-raita-4.jpg",
+    "/src/assets/images/salad-and-raita-5.jpg"
+  ],
+  "Tandoor": [
+    "/src/assets/images/tandoor-0.jpg",
+    "/src/assets/images/tandoor-1.jpg",
+    "/src/assets/images/tandoor-2.jpg",
+    "/src/assets/images/tandoor-3.jpg",
+    "/src/assets/images/tandoor-4.jpg",
+    "/src/assets/images/tandoor-5.jpg",
+    "/src/assets/images/tandoor-6.jpg",
+    "/src/assets/images/tandoor-7.jpg"
+  ],
+  "BBQ": [
+    "/src/assets/images/bbq-0.jpg",
+    "/src/assets/images/bbq-1.jpg",
+    "/src/assets/images/bbq-2.jpg",
+    "/src/assets/images/bbq-3.jpg",
+    "/src/assets/images/bbq-4.jpg",
+    "/src/assets/images/bbq-5.jpg",
+    "/src/assets/images/bbq-6.jpg",
+    "/src/assets/images/bbq-7.jpg",
+    "/src/assets/images/bbq-8.jpg",
+    "/src/assets/images/bbq-9.jpg"
+  ],
+  "BBQ Platters": [
+    "/src/assets/images/bbq-platters-0.jpg",
+    "/src/assets/images/bbq-platters-1.jpg",
+    "/src/assets/images/bbq-platters-2.jpg",
+    "/src/assets/images/bbq-platters-3.jpg",
+    "/src/assets/images/bbq-platters-4.jpg",
+    "/src/assets/images/bbq-platters-5.jpg"
+  ],
+  "Daal & Sabzi": [
+    "/src/assets/images/daal-and-sabzi-0.jpg",
+    "/src/assets/images/daal-and-sabzi-1.jpg",
+    "/src/assets/images/daal-and-sabzi-2.jpg",
+    "/src/assets/images/daal-and-sabzi-3.jpg"
+  ],
+  "Mutton Karahi": [
+    "/src/assets/images/mutton-karahi-0.jpg",
+    "/src/assets/images/mutton-karahi-1.jpg",
+    "/src/assets/images/mutton-karahi-2.jpg",
+    "/src/assets/images/mutton-karahi-3.jpg",
+    "/src/assets/images/mutton-karahi-4.jpg",
+    "/src/assets/images/mutton-karahi-5.jpg"
+  ],
+  "Beef Karahi": [
+    "/src/assets/images/beef-karahi-0.jpg",
+    "/src/assets/images/beef-karahi-1.jpg",
+    "/src/assets/images/beef-karahi-2.jpg"
+  ],
+  "Chicken Karahi": [
+    "/src/assets/images/chicken-karahi-0.jpg",
+    "/src/assets/images/chicken-karahi-1.jpg",
+    "/src/assets/images/chicken-karahi-2.jpg",
+    "/src/assets/images/chicken-karahi-3.jpg",
+    "/src/assets/images/chicken-karahi-4.jpg",
+    "/src/assets/images/chicken-karahi-5.jpg",
+    "/src/assets/images/chicken-karahi-6.jpg"
+  ],
+  "Handi": [
+    "/src/assets/images/handi-0.jpg",
+    "/src/assets/images/handi-1.jpg",
+    "/src/assets/images/handi-2.jpg",
+    "/src/assets/images/handi-3.jpg",
+    "/src/assets/images/handi-4.jpg",
+    "/src/assets/images/handi-5.jpg",
+    "/src/assets/images/handi-6.jpg",
+    "/src/assets/images/handi-7.jpg",
+    "/src/assets/images/handi-8.jpg",
+    "/src/assets/images/handi-9.jpg"
+  ],
+  "Special Grevy": [
+    "/src/assets/images/special-grevy-0.jpg",
+    "/src/assets/images/special-grevy-1.jpg",
+    "/src/assets/images/special-grevy-2.jpg",
+    "/src/assets/images/special-grevy-3.jpg",
+    "/src/assets/images/special-grevy-4.jpg",
+    "/src/assets/images/special-grevy-5.jpg"
+  ],
+  "Chinese Rice": [
+    "/src/assets/images/chinese-rice-0.jpg",
+    "/src/assets/images/chinese-rice-1.jpg",
+    "/src/assets/images/chinese-rice-2.jpg",
+    "/src/assets/images/chinese-rice-3.jpg",
+    "/src/assets/images/chinese-rice-4.jpg",
+    "/src/assets/images/chinese-rice-5.jpg"
+  ],
+  "Sweets": [
+    "/src/assets/images/sweets-0.jpg"
+  ],
+  "Pastas": [
+    "/src/assets/images/pastas-0.jpg",
+    "/src/assets/images/pastas-1.jpg",
+    "/src/assets/images/pastas-2.jpg",
+    "/src/assets/images/pastas-3.jpg",
+    "/src/assets/images/pastas-4.jpg",
+    "/src/assets/images/pastas-5.jpg"
+  ],
+  "Pulao & Biryani": [
+    "/src/assets/images/pulao-and-biryani-0.jpg",
+    "/src/assets/images/pulao-and-biryani-1.jpg",
+    "/src/assets/images/pulao-and-biryani-2.jpg",
+    "/src/assets/images/pulao-and-biryani-3.jpg",
+    "/src/assets/images/pulao-and-biryani-4.jpg",
+    "/src/assets/images/pulao-and-biryani-5.jpg"
+  ],
+  "Soups": [
+    "/src/assets/images/soups-0.jpg",
+    "/src/assets/images/soups-1.jpg",
+    "/src/assets/images/soups-2.jpg",
+    "/src/assets/images/soups-3.jpg",
+    "/src/assets/images/soups-4.jpg"
+  ],
+  "Pratha Roll": [
+    "/src/assets/images/pratha-roll-0.jpg",
+    "/src/assets/images/pratha-roll-1.jpg",
+    "/src/assets/images/pratha-roll-2.jpg",
+    "/src/assets/images/pratha-roll-3.jpg",
+    "/src/assets/images/pratha-roll-4.jpg",
+    "/src/assets/images/pratha-roll-5.jpg"
+  ],
+  "Fries": [
+    "/src/assets/images/fries-0.jpg",
+    "/src/assets/images/fries-1.jpg",
+    "/src/assets/images/fries-2.jpg",
+    "/src/assets/images/fries-3.jpg"
+  ],
+  "Wrap": [
+    "/src/assets/images/wrap-0.jpg",
+    "/src/assets/images/wrap-1.jpg",
+    "/src/assets/images/wrap-2.jpg",
+    "/src/assets/images/wrap-3.jpg",
+    "/src/assets/images/wrap-4.jpg",
+    "/src/assets/images/wrap-5.jpg"
+  ],
+  "Sandwich": [
+    "/src/assets/images/sandwich-0.jpg",
+    "/src/assets/images/sandwich-1.jpg",
+    "/src/assets/images/sandwich-2.jpg",
+    "/src/assets/images/sandwich-3.jpg"
+  ],
+  "Special Items": [
+    "/src/assets/images/special-items-0.jpg",
+    "/src/assets/images/special-items-1.jpg",
+    "/src/assets/images/special-items-2.jpg",
+    "/src/assets/images/special-items-3.jpg"
+  ],
+  "Roasted Platter": [
+    "/src/assets/images/roasted-platter-0.jpg"
+  ],
+  "Wings & Nuggets": [
+    "/src/assets/images/wings-and-nuggets-0.jpg",
+    "/src/assets/images/wings-and-nuggets-1.jpg",
+    "/src/assets/images/wings-and-nuggets-2.jpg",
+    "/src/assets/images/wings-and-nuggets-3.jpg"
+  ],
+  "Burgers": [
+    "/src/assets/images/burgers-0.jpg",
+    "/src/assets/images/burgers-1.jpg",
+    "/src/assets/images/burgers-2.jpg",
+    "/src/assets/images/burgers-3.jpg",
+    "/src/assets/images/burgers-4.jpg",
+    "/src/assets/images/burgers-5.jpg",
+    "/src/assets/images/burgers-6.jpg",
+    "/src/assets/images/burgers-7.jpg",
+    "/src/assets/images/burgers-8.jpg"
+  ],
+  "Shawarma": [
+    "/src/assets/images/shawarma-0.jpg",
+    "/src/assets/images/shawarma-1.jpg",
+    "/src/assets/images/shawarma-2.jpg",
+    "/src/assets/images/shawarma-3.jpg",
+    "/src/assets/images/shawarma-4.jpg",
+    "/src/assets/images/shawarma-5.jpg"
+  ],
+  "Regular Pizza": [
+    "/src/assets/images/regular-pizza-0.jpg",
+    "/src/assets/images/regular-pizza-1.jpg",
+    "/src/assets/images/regular-pizza-2.jpg",
+    "/src/assets/images/regular-pizza-3.jpg",
+    "/src/assets/images/regular-pizza-4.jpg",
+    "/src/assets/images/regular-pizza-5.jpg",
+    "/src/assets/images/regular-pizza-6.jpg"
+  ],
+  "Special Pizza": [
+    "/src/assets/images/special-pizza-0.jpg",
+    "/src/assets/images/special-pizza-1.jpg",
+    "/src/assets/images/special-pizza-2.jpg"
+  ],
+  "RFC Special Pizza": [
+    "/src/assets/images/rfc-special-pizza-0.jpg",
+    "/src/assets/images/rfc-special-pizza-1.jpg",
+    "/src/assets/images/rfc-special-pizza-2.jpg",
+    "/src/assets/images/rfc-special-pizza-3.jpg",
+    "/src/assets/images/rfc-special-pizza-4.jpg",
+    "/src/assets/images/rfc-special-pizza-5.jpg"
+  ],
+  "RFC New Pizza": [
+    "/src/assets/images/rfc-new-pizza-0.jpg",
+    "/src/assets/images/rfc-new-pizza-1.jpg",
+    "/src/assets/images/rfc-new-pizza-2.jpg",
+    "/src/assets/images/rfc-new-pizza-3.jpg",
+    "/src/assets/images/rfc-new-pizza-4.jpg",
+    "/src/assets/images/rfc-new-pizza-5.jpg"
+  ]
+}
