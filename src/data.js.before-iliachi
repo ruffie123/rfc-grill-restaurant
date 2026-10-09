@@ -77,7 +77,7 @@ export const menuItems = [
 
   // TEA
   { category: "Tea", name: "RFC Special Tea", price: 150, image: "https://images.pexels.com/photos/17473023/pexels-photo-17473023.jpeg?auto=compress&cs=tinysrgb&w=800" },
-  { category: "Tea", name: "Iliachi Tea", price: 180, image: "https://images.pexels.com/photos/36111905/pexels-photo-36111905.jpeg?auto=compress&cs=tinysrgb&w=800" },
+  { category: "Tea", name: "Iliachi Tea", price: 180, image: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=800" },
   { category: "Tea", name: "Green Tea", price: 110, image: "https://images.pexels.com/photos/463445/pexels-photo-463445.jpeg?auto=compress&cs=tinysrgb&w=800" },
   { category: "Tea", name: "Kashmiri Tea", price: 320, image: "https://images.pexels.com/photos/35119725/pexels-photo-35119725.jpeg?auto=compress&cs=tinysrgb&w=800" },
 
