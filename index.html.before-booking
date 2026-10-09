@@ -423,63 +423,6 @@
                 <span>Send via WhatsApp</span>
               </button>
             </form>
-
-            <!-- Reserve Table Form -->
-            <div class="booking-form-wrapper">
-              <h3 class="form-title">🍽 Reserve a Table</h3>
-              <p class="form-desc">Book your table instantly — confirmation on WhatsApp.</p>
-
-              <form id="booking-form" class="contact-form">
-                <div class="form-group">
-                  <label for="booking-name" class="form-label">Full Name *</label>
-                  <input type="text" id="booking-name" class="form-input" placeholder="Your Name" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="booking-phone" class="form-label">Phone / WhatsApp *</label>
-                  <input type="tel" id="booking-phone" class="form-input" placeholder="+92 300 0000000" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="booking-date" class="form-label">Date *</label>
-                  <input type="date" id="booking-date" class="form-input" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="booking-time" class="form-label">Time *</label>
-                  <input type="time" id="booking-time" class="form-input" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="booking-persons" class="form-label">Number of Persons *</label>
-                  <select id="booking-persons" class="form-input" required>
-                    <option value="">Select persons</option>
-                    <option value="1">1 Person</option>
-                    <option value="2">2 Persons</option>
-                    <option value="3">3 Persons</option>
-                    <option value="4">4 Persons</option>
-                    <option value="5">5 Persons</option>
-                    <option value="6">6 Persons</option>
-                    <option value="7">7 Persons</option>
-                    <option value="8">8 Persons</option>
-                    <option value="10+">10+ Persons</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="booking-notes" class="form-label">Special Request (Optional)</label>
-                  <textarea id="booking-notes" class="form-textarea" placeholder="Any special request..."></textarea>
-                </div>
-
-                <button type="submit" class="btn-form-submit">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                  </svg>
-                  <span>Confirm Booking on WhatsApp</span>
-                </button>
-              </form>
-            </div>
           </div>
         </div>
       </div>
