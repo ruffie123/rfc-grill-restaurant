@@ -61,9 +61,9 @@ export const menuItems = [
   { category: "Shakes", name: "Chaska Shake", price: 550, image: "https://images.pexels.com/photos/34711204/pexels-photo-34711204.jpeg?auto=compress&cs=tinysrgb&w=800" },
 
   // COCKTAIL DRINKS
-  { category: "Cocktail Drinks", name: "Mint Margrita", price: 280, image: "https://images.pexels.com/photos/34930022/pexels-photo-34930022.jpeg?auto=compress&cs=tinysrgb&w=800" },
-  { category: "Cocktail Drinks", name: "Lemonade", price: 280, image: "https://images.pexels.com/photos/27551844/pexels-photo-27551844.jpeg?auto=compress&cs=tinysrgb&w=800" },
-  { category: "Cocktail Drinks", name: "Fresh Lime", price: 190, image: "https://images.pexels.com/photos/31621373/pexels-photo-31621373.jpeg?auto=compress&cs=tinysrgb&w=800" },
+  { category: "Cocktail Drinks", name: "Mint Margrita", price: 280, image: "https://images.pexels.com/photos/1586190/pexels-photo-1586190.jpeg?auto=compress&cs=tinysrgb&w=800" },
+  { category: "Cocktail Drinks", name: "Lemonade", price: 280, image: "https://images.pexels.com/photos/2338407/pexels-photo-2338407.jpeg?auto=compress&cs=tinysrgb&w=800" },
+  { category: "Cocktail Drinks", name: "Fresh Lime", price: 190, image: "https://images.pexels.com/photos/4109111/pexels-photo-4109111.jpeg?auto=compress&cs=tinysrgb&w=800" },
 
   // COFFEE
   { category: "Coffee", name: "RFC Special Coffee", price: 550, image: "https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800" },
@@ -76,10 +76,10 @@ export const menuItems = [
   { category: "Coffee", name: "Chocolate Coffee", price: 450, image: "https://images.pexels.com/photos/1117862/pexels-photo-1117862.jpeg?auto=compress&cs=tinysrgb&w=800" },
 
   // TEA
-  { category: "Tea", name: "RFC Special Tea", price: 150, image: "https://images.pexels.com/photos/17473023/pexels-photo-17473023.jpeg?auto=compress&cs=tinysrgb&w=800" },
+  { category: "Tea", name: "RFC Special Tea", price: 150, image: "https://images.pexels.com/photos/5410402/pexels-photo-5410402.jpeg?auto=compress&cs=tinysrgb&w=800" },
   { category: "Tea", name: "Iliachi Tea", price: 180, image: "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=800" },
-  { category: "Tea", name: "Green Tea", price: 110, image: "https://images.pexels.com/photos/463445/pexels-photo-463445.jpeg?auto=compress&cs=tinysrgb&w=800" },
-  { category: "Tea", name: "Kashmiri Tea", price: 320, image: "https://images.pexels.com/photos/35119725/pexels-photo-35119725.jpeg?auto=compress&cs=tinysrgb&w=800" },
+  { category: "Tea", name: "Green Tea", price: 110, image: "https://images.pexels.com/photos/7625056/pexels-photo-7625056.jpeg?auto=compress&cs=tinysrgb&w=800" },
+  { category: "Tea", name: "Kashmiri Tea", price: 320, image: "https://images.pexels.com/photos/5410402/pexels-photo-5410402.jpeg?auto=compress&cs=tinysrgb&w=800" },
 
   // ICE CREAM
   { category: "Ice Cream", name: "Ice Cream 2 Scoop", price: 350, description: "Flavours: Kulfa, Pista, Vanilla, Chocolate, Strawberry, Mango, Caramel", image: "https://images.pexels.com/photos/1552635/pexels-photo-1552635.jpeg?auto=compress&cs=tinysrgb&w=800" },
