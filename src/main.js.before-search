@@ -91,61 +91,8 @@ function initSearch() {
   const clearBtn = document.getElementById("menu-search-clear");
   if (!searchInput) return;
 
-  document.addEventListener("click", (e) => {
-    const sug = document.getElementById("search-suggestions");
-    if (sug && !e.target.closest(".menu-search-wrapper")) {
-      sug.classList.remove("active");
-      sug.innerHTML = "";
-    }
-  });
-
-  function updateSuggestions(query) {
-    const suggestions = document.getElementById("search-suggestions");
-    if (!suggestions) return;
-    if (!query || query.length < 1) {
-      suggestions.classList.remove("active");
-      suggestions.innerHTML = "";
-      return;
-    }
-    const matches = menuItems
-      .filter(item =>
-        item.name.toLowerCase().includes(query) ||
-        item.category.toLowerCase().includes(query)
-      )
-      .slice(0, 8);
-    if (matches.length === 0) {
-      suggestions.classList.remove("active");
-      suggestions.innerHTML = "";
-      return;
-    }
-    suggestions.innerHTML = matches.map((item) => {
-      const name = item.name;
-      const idx = name.toLowerCase().indexOf(query);
-      const highlighted = idx >= 0
-        ? name.substring(0, idx) + '<span class="match">' + name.substring(idx, idx + query.length) + '</span>' + name.substring(idx + query.length)
-        : name;
-      return '<div class="search-suggestion-item" data-name="' + item.name + '">' +
-        '<div><div class="search-suggestion-name">' + highlighted + '</div>' +
-        '<div class="search-suggestion-category">' + item.category + '</div></div>' +
-        '<div class="search-suggestion-price">Rs ' + (item.price || '') + '</div>' +
-        '</div>';
-    }).join('');
-    suggestions.classList.add("active");
-    suggestions.querySelectorAll(".search-suggestion-item").forEach(el => {
-      el.addEventListener("click", () => {
-        const nm = el.dataset.name;
-        searchInput.value = nm;
-        searchQuery = nm.toLowerCase();
-        suggestions.classList.remove("active");
-        suggestions.innerHTML = "";
-        if (typeof renderMenuItems === 'function') renderMenuItems();
-      });
-    });
-  }
-
   searchInput.addEventListener("input", (e) => {
     searchQuery = e.target.value.trim().toLowerCase();
-    updateSuggestions(searchQuery);
     if (clearBtn) {
       clearBtn.style.display = searchQuery ? "block" : "none";
     }

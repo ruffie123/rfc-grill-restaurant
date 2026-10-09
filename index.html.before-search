@@ -156,8 +156,7 @@
                 <line x1="6" y1="6" x2="18" y2="18"></line>
               </svg>
             </button>
-          <div id="search-suggestions" class="search-suggestions"></div>
-    </div>
+          </div>
 
           <!-- Category tabs (clickable, filters items in exact required order) -->
           <div class="category-tabs-container">
