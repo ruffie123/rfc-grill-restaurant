@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RFC GRILL RESTAURANT — Pakistani Smokehouse Shakargarh</title>
+    <meta name="description" content="Pakistani Smokehouse in Shakargarh offering premium charcoal grill delicacies, karahi, handi, pizza, and fast food deals. Taste the flame at RFC Grill Restaurant." />
+    <meta property="og:title" content="RFC GRILL RESTAURANT — Pakistani Smokehouse Shakargarh" />
+    <meta property="og:description" content="Pakistani Smokehouse in Shakargarh offering premium charcoal grill delicacies, karahi, handi, pizza, and fast food deals. Taste the flame at RFC Grill Restaurant." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- 1. HEADER (Sticky, Glassmorphic) -->
+    <header class="header">
+      <div class="container header-container">
+        <!-- Logo: RFC GRILL with flame icon & Subtitle: PAKISTANI SMOKEHOUSE -->
+        <a href="#home" class="brand" aria-label="RFC Grill Home">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+            </svg>
+          </div>
+          <div class="brand-info">
+            <span class="brand-title">RFC GRILL</span>
+            <span class="brand-subtitle">PAKISTANI SMOKEHOUSE</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation: Home, Menu, Deals, About, Contact -->
+        <nav class="nav-links" aria-label="Primary Navigation">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#deals" class="nav-link">Deals</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Actions: "Order Now" & Mobile Hamburger -->
+        <div class="header-actions">
+          <a href="https://wa.me/923247104014" target="_blank" rel="noopener noreferrer" class="btn-header-order">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            </svg>
+            <span>Order Now</span>
+          </a>
+
+          <button type="button" class="btn-hamburger" id="hamburger-btn" aria-label="Toggle navigation menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Nav Drawer -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile Navigation">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#menu" class="mobile-nav-link">Menu</a>
+      <a href="#deals" class="mobile-nav-link">Deals</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+    </nav>
+
+    <!-- 2. HERO SECTION (id="home") -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-glow"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+            </svg>
+            <span>Shakargarh's Iconic Grill House</span>
+          </div>
+
+          <h1 class="hero-headline">Taste the <span>Flame.</span></h1>
+
+          <p class="hero-subheadline">
+            Premium Pakistani charcoal grill delicacies, aged spice rubs, and searing sigdi platters crafted with over a decade of master pitmaster craftsmanship.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#menu" class="btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+              </svg>
+              <span>View Full Menu</span>
+            </a>
+
+            <a href="https://wa.me/923247104014" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <span>Order Online</span>
+            </a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="hero-badge-item">
+              <div class="badge-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <span>100% Halal Lumpwood Charcoal</span>
+            </div>
+
+            <div class="hero-badge-item">
+              <div class="badge-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <span>30-Min Fast City Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MENU SECTION (id="menu") -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Authentic Recipes</span>
+          <h2 class="section-title">Our Master Smokehouse Menu</h2>
+          <p class="section-subtitle">
+            Explore 33 handcrafted categories of live charcoal BBQ, rich karahis, clay-oven tandoor, artisanal pizzas, and refreshing shakes.
+          </p>
+        </div>
+
+        <div class="menu-controls">
+          <!-- Search Bar (Live search) -->
+          <div class="menu-search-wrapper">
+            <svg class="menu-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              id="menu-search" 
+              class="menu-search-input" 
+              placeholder="Search dishes by name (e.g. Karahi, Kabab, Tikka, Pizza)..." 
+              autocomplete="off"
+            />
+            <button type="button" id="menu-search-clear" class="menu-search-clear" aria-label="Clear search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          <div id="search-suggestions" class="search-suggestions"></div>
+    </div>
+
+          <!-- Category tabs (clickable, filters items in exact required order) -->
+          <div class="category-tabs-container">
+            <div class="category-tabs" id="category-tabs" role="tablist">
+              <!-- Dynamically populated in JavaScript in exact required order -->
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-status-bar">
+          <div class="menu-active-category-title" id="active-category-title">Shakes</div>
+          <div id="menu-item-count">Loading items...</div>
+        </div>
+
+        <!-- Menu Items Grid -->
+        <div class="menu-grid" id="menu-grid">
+          <!-- Dynamically populated cards with Image, Name, Price, Add to Order button -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. DEALS SECTION (id="deals") — SEPARATE -->
+    <section class="section deals-section" id="deals">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Value Combinations</span>
+          <h2 class="section-title">Special Value Deals</h2>
+          <p class="section-subtitle">
+            Signature combo packages prepared fresh for families, students, and festive gatherings.
+          </p>
+        </div>
+
+        <!-- RFC Family Deal (Flagship) -->
+        <div id="family-deal-container">
+          <!-- Populated in JavaScript -->
+        </div>
+
+        <!-- Sub-section 1: Fast Food Deals -->
+        <h3 class="deal-subheading">
+          <span class="deal-subheading-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </span>
+          <span>Fast Food Deals</span>
+        </h3>
+        <div class="deals-grid" id="fast-food-deals-grid">
+          <!-- Populated in JavaScript -->
+        </div>
+
+        <!-- Sub-section 2: Pizza Deals -->
+        <h3 class="deal-subheading">
+          <span class="deal-subheading-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 15 10-15-10-5z"></path>
+              <circle cx="12" cy="11" r="2"></circle>
+            </svg>
+          </span>
+          <span>Pizza Deals</span>
+        </h3>
+        <div class="deals-grid" id="pizza-deals-grid">
+          <!-- Populated in JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ABOUT SECTION (id="about") -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Since Day One</span>
+          <h2 class="section-title">Our Story</h2>
+          <p class="section-subtitle">
+            The beating heart of Shakargarh's charcoal barbecue culture.
+          </p>
+        </div>
+
+        <!-- Story Paragraph -->
+        <div class="about-story-box">
+          <p class="about-story-paragraph">
+            Established at the heart of Shakargarh at Gamtala Chowk, RFC GRILL RESTAURANT is dedicated to the craft of slow-smoke live-fire cooking and centuries-old Pakistani culinary traditions. From hand-trimmed mutton and beef karahis simmered in cast iron to aromatic skewers of tikka boti grilled over red-hot lumpwood charcoal, our kitchen bridges ancestral Pakistani recipes with fast, modern hospitality. Every marinade is blended in-house with whole ground spices, and every bread is pulled fresh from our blazing clay tandoor.
+          </p>
+        </div>
+
+        <!-- 4 Feature Cards: Fresh Ingredients, Fast Delivery, Premium Quality, Open 24/7 -->
+        <div class="features-grid">
+          <!-- 1. Fresh Ingredients -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V17a1 1 0 0 1-2 0v-.07A7.003 7.003 0 0 1 5.07 11H5a1 1 0 0 1 0-2h.07A7.003 7.003 0 0 1 11 3.07V3a1 1 0 0 1 2 0v.07A7.003 7.003 0 0 1 18.93 9H19a1 1 0 0 1 0 2h-.07A7.003 7.003 0 0 1 13 16.93z"></path>
+              </svg>
+            </div>
+            <h4 class="feature-title">Fresh Ingredients</h4>
+            <p class="feature-desc">100% halal hand-trimmed meats, pure dairy, and farm-fresh spices sourced daily.</p>
+          </div>
+
+          <!-- 2. Fast Delivery -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h4 class="feature-title">Fast Delivery</h4>
+            <p class="feature-desc">Piping-hot delivery packed in heat-retaining containers right to your doorstep across Shakargarh.</p>
+          </div>
+
+          <!-- 3. Premium Quality -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <h4 class="feature-title">Premium Quality</h4>
+            <p class="feature-desc">Natural wood-charcoal grilling techniques overseen by master Pakistani pitmasters.</p>
+          </div>
+
+          <!-- 4. Open 24/7 -->
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h4 class="feature-title">Open 24/7</h4>
+            <p class="feature-desc">Continuous service and late-night cravings fulfilled daily from noon to 3:00 AM midnight.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION (id="contact") -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Find Us & Reach Out</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Visit our smokehouse at Gamtala Chowk or place an instant order on WhatsApp.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left: Contact info with icons (MapPin, Phone, Mail, Clock) -->
+          <div class="contact-info-panel">
+            <!-- MapPin -->
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Location</div>
+                <div class="contact-card-value">Gamtala Chowk, near Byco Petrol Pump, Shakargarh, Punjab, Pakistan</div>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Phone & WhatsApp</div>
+                <div class="contact-card-value">
+                  <a href="https://wa.me/923247104014" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+                    +92 324 7104014
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mail -->
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Email</div>
+                <div class="contact-card-value">
+                  <a href="mailto:rfcgrill@gmail.com" class="contact-card-link">rfcgrill@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Clock -->
+            <div class="contact-info-card">
+              <div class="contact-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-card-label">Hours of Operation</div>
+                <div class="contact-card-value">Monday – Sunday: 12:00 PM – 03:00 AM</div>
+              </div>
+            </div>
+
+            <!-- Directions Button → Opens Google Maps -->
+            <a 
+              href="https://www.google.com/maps/search/?api=1&query=Gamtala+Chowk+near+Byco+Petrol+Pump+Shakargarh+Punjab+Pakistan" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-directions"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+              </svg>
+              <span>Get Directions on Google Maps</span>
+            </a>
+          </div>
+
+          <!-- Right: Contact Form (Name, Phone, Email, Message) -->
+          <div class="contact-form-panel">
+            <h3 class="form-title">Send Us a Direct Message</h3>
+            <p class="form-desc">Fill out your inquiry or reservation request and we will connect instantly via WhatsApp.</p>
+
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name *</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Your Name" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-phone" class="form-label">Phone / WhatsApp Number *</label>
+                <input type="tel" id="contact-phone" class="form-input" placeholder="+92 300 0000000" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address (Optional)</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="you@example.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Your Message / Order Special Instructions *</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell us how we can help you..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-form-submit">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                <span>Send via WhatsApp</span>
+              </button>
+            </form>
+
+            <!-- Reserve Table Form -->
+            <div class="booking-form-wrapper">
+              <h3 class="form-title">🍽 Reserve a Table</h3>
+              <p class="form-desc">Book your table instantly — confirmation on WhatsApp.</p>
+
+              <form id="booking-form" class="contact-form">
+                <div class="form-group">
+                  <label for="booking-name" class="form-label">Full Name *</label>
+                  <input type="text" id="booking-name" class="form-input" placeholder="Your Name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="booking-phone" class="form-label">Phone / WhatsApp *</label>
+                  <input type="tel" id="booking-phone" class="form-input" placeholder="+92 300 0000000" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="booking-date" class="form-label">Date *</label>
+                  <input type="date" id="booking-date" class="form-input" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="booking-time" class="form-label">Time *</label>
+                  <input type="time" id="booking-time" class="form-input" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="booking-persons" class="form-label">Number of Persons *</label>
+                  <select id="booking-persons" class="form-input" required>
+                    <option value="">Select persons</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 Persons</option>
+                    <option value="3">3 Persons</option>
+                    <option value="4">4 Persons</option>
+                    <option value="5">5 Persons</option>
+                    <option value="6">6 Persons</option>
+                    <option value="7">7 Persons</option>
+                    <option value="8">8 Persons</option>
+                    <option value="10+">10+ Persons</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="booking-notes" class="form-label">Special Request (Optional)</label>
+                  <textarea id="booking-notes" class="form-textarea" placeholder="Any special request..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-form-submit">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span>Confirm Booking on WhatsApp</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand & Tagline -->
+          <div>
+            <div class="brand">
+              <div class="brand-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+                </svg>
+              </div>
+              <div class="brand-info">
+                <span class="brand-title">RFC GRILL</span>
+                <span class="brand-subtitle">PAKISTANI SMOKEHOUSE</span>
+              </div>
+            </div>
+            <p class="footer-desc">
+              Authentic Pakistani live charcoal barbecue, sizzling karahi bowls, oven-fired pizza, and fast city delivery in Shakargarh, Punjab.
+            </p>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div>
+            <h4 class="footer-col-title">Quick Links</h4>
+            <ul class="footer-links-list">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#menu" class="footer-link">Full Menu</a></li>
+              <li><a href="#deals" class="footer-link">Special Deals</a></li>
+              <li><a href="#about" class="footer-link">About Us</a></li>
+              <li><a href="#contact" class="footer-link">Contact & Directions</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Contact & Hours -->
+          <div>
+            <h4 class="footer-col-title">Hours & Contact</h4>
+            <div class="footer-hours-text">
+              <p>Monday – Sunday</p>
+              <span class="footer-hours-highlight">12:00 PM – 03:00 AM</span>
+              <p style="margin-top: 14px;">WhatsApp Orders:</p>
+              <a href="https://wa.me/923247104014" target="_blank" rel="noopener noreferrer" style="color: var(--orange-neon); font-weight: 600;">
+                +92 324 7104014
+              </a>
+              <p style="margin-top: 6px;">Email: rfcgrill@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="dev-credit">
+            Developed by Rafay Waqar — <a href="https://wa.me/923247104014" target="_blank" rel="noopener noreferrer">+92 324 7104014</a>
+          </div>
+          <div>
+            Made with <span class="shakargarh-heart">♥</span> in Shakargarh, Pakistan
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vanilla JavaScript entry point -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

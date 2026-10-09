@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel — RFC Grill</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <!-- Login Screen -->
+  <div id="login-screen" class="admin-login-screen">
+    <div class="admin-login-box">
+      <div class="admin-logo">🔥</div>
+      <h1 class="admin-login-title">RFC GRILL</h1>
+      <p class="admin-login-sub">Admin Panel</p>
+      <form id="admin-login-form" class="admin-login-form">
+        <input type="password" id="admin-password" class="form-input" placeholder="Enter admin password" required />
+        <button type="submit" class="btn-form-submit">
+          <span>Unlock</span>
+        </button>
+      </form>
+      <p id="login-error" class="admin-login-error"></p>
+      <a href="/" class="admin-back-link">← Back to Website</a>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard -->
+  <div id="admin-dashboard" class="admin-dashboard" style="display:none;">
+    <header class="admin-header">
+      <div class="admin-header-left">
+        <div class="admin-logo-small">🔥</div>
+        <div>
+          <h1>RFC Grill Admin</h1>
+          <p>Management Panel</p>
+        </div>
+      </div>
+      <div class="admin-header-right">
+        <a href="/" class="admin-btn-outline">View Website</a>
+        <button id="admin-logout" class="admin-btn-outline">Logout</button>
+      </div>
+    </header>
+
+    <div class="admin-container">
+      <!-- Stats -->
+      <div class="admin-stats">
+        <div class="admin-stat-card">
+          <div class="admin-stat-value" id="stat-items">0</div>
+          <div class="admin-stat-label">Menu Items</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-value" id="stat-categories">0</div>
+          <div class="admin-stat-label">Categories</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-value" id="stat-bookings">0</div>
+          <div class="admin-stat-label">Bookings</div>
+        </div>
+        <div class="admin-stat-card">
+          <div class="admin-stat-value" id="stat-messages">0</div>
+          <div class="admin-stat-label">Messages</div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="admin-tabs">
+        <button class="admin-tab active" data-tab="menu">Menu Manager</button>
+        <button class="admin-tab" data-tab="bookings">Bookings</button>
+        <button class="admin-tab" data-tab="messages">Messages</button>
+        <button class="admin-tab" data-tab="settings">Settings</button>
+      </div>
+
+      <!-- Menu Tab -->
+      <div id="tab-menu" class="admin-tab-content active">
+        <div class="admin-section">
+          <div class="admin-section-header">
+            <h2>Menu Items</h2>
+            <input type="text" id="menu-search-admin" class="form-input admin-search" placeholder="Search items..." />
+          </div>
+          <div id="admin-menu-list" class="admin-menu-list"></div>
+        </div>
+      </div>
+
+      <!-- Bookings Tab -->
+      <div id="tab-bookings" class="admin-tab-content">
+        <div class="admin-section">
+          <div class="admin-section-header">
+            <h2>Table Bookings</h2>
+            <button id="clear-bookings" class="admin-btn-danger">Clear All</button>
+          </div>
+          <div id="admin-bookings-list" class="admin-list"></div>
+        </div>
+      </div>
+
+      <!-- Messages Tab -->
+      <div id="tab-messages" class="admin-tab-content">
+        <div class="admin-section">
+          <div class="admin-section-header">
+            <h2>Contact Messages</h2>
+            <button id="clear-messages" class="admin-btn-danger">Clear All</button>
+          </div>
+          <div id="admin-messages-list" class="admin-list"></div>
+        </div>
+      </div>
+
+      <!-- Settings Tab -->
+      <div id="tab-settings" class="admin-tab-content">
+        <div class="admin-section">
+          <h2>Restaurant Settings</h2>
+          <div class="admin-settings-form">
+            <div class="form-group">
+              <label class="form-label">WhatsApp Number (with country code)</label>
+              <input type="text" id="setting-phone" class="form-input" placeholder="923247104014" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Restaurant Name</label>
+              <input type="text" id="setting-name" class="form-input" placeholder="RFC Grill Restaurant" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Opening Hours</label>
+              <input type="text" id="setting-hours" class="form-input" placeholder="12:00 PM - 03:00 AM" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Address</label>
+              <input type="text" id="setting-address" class="form-input" placeholder="Gamtala Chowk, Shakargarh" />
+            </div>
+            <button id="save-settings" class="btn-form-submit">
+              <span>Save Settings</span>
+            </button>
+            <p id="settings-status" class="admin-settings-status"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/admin.js"></script>
+</body>
+</html>

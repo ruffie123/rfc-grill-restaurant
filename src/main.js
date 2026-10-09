@@ -436,6 +436,13 @@ function initContactForm() {
       return;
     }
 
+    // Save message to localStorage
+    try {
+      const messages = JSON.parse(localStorage.getItem("rfc_messages") || "[]");
+      messages.push({ name: name, phone: phone, email: email, message: message, createdAt: new Date().toLocaleString() });
+      localStorage.setItem("rfc_messages", JSON.stringify(messages));
+    } catch(err) { console.error("Message save failed:", err); }
+
     const text = `Assalamualaikum RFC Grill, mera naam ${name} hai.\nPhone: ${phone}\nEmail: ${email || 'N/A'}\nMessage: ${message}`;
     const url = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(text)}`;
 
@@ -488,6 +495,23 @@ function initBookingForm() {
     if (!name || !phone || !date || !time || !persons) {
       alert("Please fill in all required fields (Name, Phone, Date, Time, Persons).");
       return;
+    }
+
+    // Save to localStorage for admin panel
+    try {
+      const bookings = JSON.parse(localStorage.getItem("rfc_bookings") || "[]");
+      bookings.push({
+        name: name,
+        phone: phone,
+        date: date,
+        time: time,
+        persons: persons,
+        notes: notes,
+        createdAt: new Date().toLocaleString()
+      });
+      localStorage.setItem("rfc_bookings", JSON.stringify(bookings));
+    } catch (err) {
+      console.error("Booking save failed:", err);
     }
 
     const text = `🍽 *TABLE RESERVATION REQUEST*\n\n` +
