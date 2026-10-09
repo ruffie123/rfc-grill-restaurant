@@ -1710,3 +1710,26 @@ select.form-input option {
 
 .admin-settings-form { display: flex; flex-direction: column; gap: 14px; max-width: 500px; }
 .admin-settings-status { color: #4ade80; font-size: 0.85rem; min-height: 20px; margin-top: 6px; }
+
+/* ===== Admin Settings Button ===== */
+.btn-header-settings {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #aaa;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 8px;
+}
+.btn-header-settings:hover {
+  background: rgba(255, 107, 26, 0.15);
+  border-color: rgba(255, 107, 26, 0.4);
+  color: #FF6B1A;
+}
+.btn-header-settings svg { transition: transform 0.3s ease; }
+.btn-header-settings:hover svg { transform: rotate(45deg); }

@@ -544,3 +544,17 @@ if (typeof window !== 'undefined') {
     }, 100);
   }
 }
+
+// ===== Admin Settings Button =====
+(function() {
+  if (typeof document === 'undefined') return;
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("admin-settings-btn");
+    if (btn && !btn.dataset.hooked) {
+      btn.dataset.hooked = "1";
+      btn.addEventListener("click", () => {
+        window.location.href = "/admin.html";
+      });
+    }
+  });
+})();
