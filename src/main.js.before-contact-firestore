@@ -430,7 +430,7 @@ function initContactForm() {
   const form = document.getElementById("contact-form");
   if (!form) return;
 
-  form.addEventListener("submit", async (e) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
     const name = document.getElementById("contact-name").value.trim();
     const phone = document.getElementById("contact-phone").value.trim();
@@ -442,21 +442,12 @@ function initContactForm() {
       return;
     }
 
-    // Save message to Firestore
+    // Save message to localStorage
     try {
-      const { collection, addDoc, serverTimestamp } = window.firebaseFns;
-      await addDoc(collection(window.firebaseDB, "messages"), {
-        name: name, phone: phone, email: email || "", message: message, createdAt: serverTimestamp()
-      });
-      console.log("Message saved to Firestore");
-    } catch(err) {
-      console.error("Firestore save failed:", err);
-      try {
-        const messages = JSON.parse(localStorage.getItem("rfc_messages") || "[]");
-        messages.push({ name: name, phone: phone, email: email, message: message, createdAt: new Date().toLocaleString() });
-        localStorage.setItem("rfc_messages", JSON.stringify(messages));
-      } catch(e2) {}
-    }
+      const messages = JSON.parse(localStorage.getItem("rfc_messages") || "[]");
+      messages.push({ name: name, phone: phone, email: email, message: message, createdAt: new Date().toLocaleString() });
+      localStorage.setItem("rfc_messages", JSON.stringify(messages));
+    } catch(err) { console.error("Message save failed:", err); }
 
     const text = `Assalamualaikum RFC Grill, mera naam ${name} hai.\nPhone: ${phone}\nEmail: ${email || 'N/A'}\nMessage: ${message}`;
     const url = `https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(text)}`;
@@ -498,7 +489,7 @@ function initBookingForm() {
   const form = document.getElementById("booking-form");
   if (!form) return;
 
-  form.addEventListener("submit", async (e) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
     const name = document.getElementById("booking-name").value.trim();
     const phone = document.getElementById("booking-phone").value.trim();
@@ -512,20 +503,21 @@ function initBookingForm() {
       return;
     }
 
-    // Save to Firestore
+    // Save to localStorage for admin panel
     try {
-      const { collection, addDoc, serverTimestamp } = window.firebaseFns;
-      await addDoc(collection(window.firebaseDB, "bookings"), {
-        name: name, phone: phone, date: date, time: time, persons: persons, notes: notes, createdAt: serverTimestamp()
+      const bookings = JSON.parse(localStorage.getItem("rfc_bookings") || "[]");
+      bookings.push({
+        name: name,
+        phone: phone,
+        date: date,
+        time: time,
+        persons: persons,
+        notes: notes,
+        createdAt: new Date().toLocaleString()
       });
-      console.log("Booking saved to Firestore");
+      localStorage.setItem("rfc_bookings", JSON.stringify(bookings));
     } catch (err) {
-      console.error("Firestore save failed:", err);
-      try {
-        const bookings = JSON.parse(localStorage.getItem("rfc_bookings") || "[]");
-        bookings.push({ name, phone, date, time, persons, notes, createdAt: new Date().toLocaleString() });
-        localStorage.setItem("rfc_bookings", JSON.stringify(bookings));
-      } catch(e2) {}
+      console.error("Booking save failed:", err);
     }
 
     const text = `🍽 *TABLE RESERVATION REQUEST*\n\n` +
