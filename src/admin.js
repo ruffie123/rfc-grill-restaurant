@@ -62,11 +62,11 @@ document.getElementById("admin-logout")?.addEventListener("click", async () => {
 // ===== DASHBOARD =====
 let allItems = [...menuItems];
 
-function initDashboard() {
-  updateStats();
+async function initDashboard() {
+  await updateStats();
   renderMenuList(allItems);
-  renderBookings();
-  renderMessages();
+  await renderBookings();
+  await renderMessages();
   loadSettings();
   initTabs();
   initSearch();
