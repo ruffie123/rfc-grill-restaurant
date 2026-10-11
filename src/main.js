@@ -1,3 +1,4 @@
+import { categories, menuItems, fastFoodDeals, pizzaDeals, familyDeal } from './data.js';
 
 // Firebase helpers (loaded via CDN in index.html)
 const fb = () => window.firebaseFns;
@@ -5,7 +6,6 @@ const getDB = () => window.firebaseDB;
 const getAuth = () => window.firebaseAuth;
 
 // RFC GRILL RESTAURANT - Pure Vanilla JavaScript
-import { categories, menuItems, fastFoodDeals, pizzaDeals, familyDeal } from './data.js';
 
 // SVG Icons (Lucide compatible inline SVGs)
 const ICONS = {
