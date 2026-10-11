@@ -29,7 +29,7 @@
       const app = initializeApp(firebaseConfig);
       window.firebaseDB = getFirestore(app);
       window.firebaseAuth = getAuth(app);
-      window.firebaseFns = { collection, addDoc, getDocs, deleteDoc, doc, query, orderBy, serverTimestamp, signInWithEmailAndPassword, signOut, onAuthStateChanged };
+      window.firebaseFns = { collection, addDoc, getDocs, deleteDoc, doc, query, orderBy, serverTimestamp, getDoc, signInWithEmailAndPassword, signOut, onAuthStateChanged };
       console.log("Firebase loaded");
     </script>
 </head>

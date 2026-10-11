@@ -578,10 +578,12 @@ if (typeof window !== 'undefined') {
   });
 })();
 
-// ===== Apply settings from localStorage =====
-function applySettings() {
+// ===== Apply settings from Firestore (with localStorage fallback) =====
+async function applySettings() {
   try {
-    const s = JSON.parse(localStorage.getItem("rfc_settings") || "{}");
+    const { doc, getDoc } = window.firebaseFns;
+    const snap = await getDoc(doc(window.firebaseDB, "settings", "main"));
+    const s = snap.exists() ? snap.data() : JSON.parse(localStorage.getItem("rfc_settings") || "{}");
     document.querySelectorAll('[data-setting="name"]').forEach(el => {
       if (s.name) el.textContent = s.name.toUpperCase();
     });
@@ -591,7 +593,24 @@ function applySettings() {
     document.querySelectorAll('[data-setting="address"]').forEach(el => {
       if (s.address) el.textContent = s.address;
     });
-  } catch(err) { console.error("Settings apply failed:", err); }
+    if (s.phone) {
+      localStorage.setItem("rfc_settings", JSON.stringify(s));
+    }
+  } catch(err) {
+    console.error("Settings apply failed, using localStorage:", err);
+    try {
+      const s = JSON.parse(localStorage.getItem("rfc_settings") || "{}");
+      document.querySelectorAll('[data-setting="name"]').forEach(el => {
+        if (s.name) el.textContent = s.name.toUpperCase();
+      });
+      document.querySelectorAll('[data-setting="hours"]').forEach(el => {
+        if (s.hours) el.textContent = s.hours;
+      });
+      document.querySelectorAll('[data-setting="address"]').forEach(el => {
+        if (s.address) el.textContent = s.address;
+      });
+    } catch(e2) {}
+  }
 }
 
 // Call on page load

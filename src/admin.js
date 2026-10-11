@@ -266,17 +266,26 @@ function loadSettings() {
 }
 
 function initSettingsSave() {
-  document.getElementById("save-settings")?.addEventListener("click", () => {
+  document.getElementById("save-settings")?.addEventListener("click", async () => {
     const settings = {
       phone: document.getElementById("setting-phone").value,
       name: document.getElementById("setting-name").value,
       hours: document.getElementById("setting-hours").value,
       address: document.getElementById("setting-address").value,
     };
-    localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
     const status = document.getElementById("settings-status");
-    status.textContent = "✓ Settings saved!";
-    setTimeout(() => { status.textContent = ""; }, 3000);
+    try {
+      const { doc, setDoc } = window.firebaseFns;
+      await setDoc(doc(getDB(), "settings", "main"), settings);
+      localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+      status.textContent = "✓ Settings saved! (Live on website)";
+      status.style.color = "#4ade80";
+      setTimeout(() => { status.textContent = ""; }, 4000);
+    } catch(err) {
+      console.error("Settings save failed:", err);
+      status.textContent = "❌ Save failed: " + err.message;
+      status.style.color = "#ff4444";
+    }
   });
 }
 
