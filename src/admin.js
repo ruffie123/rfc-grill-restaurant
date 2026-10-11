@@ -205,18 +205,45 @@ async function renderMessages() {
 
 // ===== CLEAR =====
 function initClearButtons() {
-  document.getElementById("clear-bookings")?.addEventListener("click", () => {
+  document.getElementById("clear-bookings")?.addEventListener("click", async () => {
     if (confirm("Clear all bookings?")) {
-      localStorage.setItem(BOOKINGS_KEY, "[]");
-      renderBookings();
-      updateStats();
+      try {
+        const { collection, getDocs, deleteDoc, doc } = window.firebaseFns;
+        const snap = await getDocs(collection(getDB(), "bookings"));
+        let count = 0;
+        for (const d of snap.docs) {
+          await deleteDoc(doc(getDB(), "bookings", d.id));
+          count++;
+        }
+        console.log("Deleted " + count + " bookings");
+        localStorage.setItem(BOOKINGS_KEY, "[]");
+        await renderBookings();
+        await updateStats();
+      } catch(err) {
+        console.error("Delete failed:", err);
+        alert("Delete failed: " + err.message);
+      }
     }
   });
-  document.getElementById("clear-messages")?.addEventListener("click", () => {
+  
+  document.getElementById("clear-messages")?.addEventListener("click", async () => {
     if (confirm("Clear all messages?")) {
-      localStorage.setItem(MESSAGES_KEY, "[]");
-      renderMessages();
-      updateStats();
+      try {
+        const { collection, getDocs, deleteDoc, doc } = window.firebaseFns;
+        const snap = await getDocs(collection(getDB(), "messages"));
+        let count = 0;
+        for (const d of snap.docs) {
+          await deleteDoc(doc(getDB(), "messages", d.id));
+          count++;
+        }
+        console.log("Deleted " + count + " messages");
+        localStorage.setItem(MESSAGES_KEY, "[]");
+        await renderMessages();
+        await updateStats();
+      } catch(err) {
+        console.error("Delete failed:", err);
+        alert("Delete failed: " + err.message);
+      }
     }
   });
 }
