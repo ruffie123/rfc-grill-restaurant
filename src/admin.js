@@ -74,12 +74,18 @@ function initDashboard() {
   initSettingsSave();
 }
 
-function updateStats() {
+async function updateStats() {
   document.getElementById("stat-items").textContent = allItems.length;
   const cats = new Set(allItems.map(i => i.category));
   document.getElementById("stat-categories").textContent = cats.size;
-  document.getElementById("stat-bookings").textContent = getBookings().length;
-  document.getElementById("stat-messages").textContent = getMessages().length;
+  try {
+    const bookings = await getBookings();
+    document.getElementById("stat-bookings").textContent = bookings.length;
+    const messages = await getMessages();
+    document.getElementById("stat-messages").textContent = messages.length;
+  } catch(err) {
+    console.error("Stats update failed:", err);
+  }
 }
 
 // ===== TABS =====
