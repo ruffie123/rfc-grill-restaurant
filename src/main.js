@@ -26,6 +26,27 @@ let currentCategory = categories[0]; // "Shakes" by default
 let searchQuery = "";
 
 // DOM Elements
+// Wait for Firebase to be ready
+function waitForFirebase(callback, maxAttempts = 50) {
+  let attempts = 0;
+  const check = () => {
+    attempts++;
+    if (window.firebaseFns && window.firebaseDB) {
+      callback();
+    } else if (attempts < maxAttempts) {
+      setTimeout(check, 100);
+    } else {
+      console.warn("Firebase not loaded in time, running anyway");
+      callback();
+    }
+  };
+  check();
+}
+
+waitForFirebase(() => {
+  initMenu();
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   initCategoryTabs();
