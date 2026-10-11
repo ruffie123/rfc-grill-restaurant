@@ -56,15 +56,16 @@ function waitForFirebase(callback, maxAttempts = 50) {
   }, 2000);
 }
 
-waitForFirebase(() => {
-  initMenu();
-});
-
 document.addEventListener("DOMContentLoaded", () => {
+  // Wait for Firebase, then render menu
+  waitForFirebase(() => {
+    console.log("Firebase ready, rendering menu");
+    renderMenuItems();
+  });
+  
   initMobileNav();
   initCategoryTabs();
   initSearch();
-  renderMenuItems();
   renderDeals();
   initContactForm();
   initNavScroll();
