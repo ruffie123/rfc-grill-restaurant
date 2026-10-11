@@ -29,18 +29,31 @@ let searchQuery = "";
 // Wait for Firebase to be ready
 function waitForFirebase(callback, maxAttempts = 50) {
   let attempts = 0;
+  let called = false;
   const check = () => {
+    if (called) return;
     attempts++;
     if (window.firebaseFns && window.firebaseDB) {
+      called = true;
+      console.log("Firebase ready, calling callback");
       callback();
     } else if (attempts < maxAttempts) {
       setTimeout(check, 100);
     } else {
+      called = true;
       console.warn("Firebase not loaded in time, running anyway");
       callback();
     }
   };
   check();
+  // Hard fallback — always call after 2 seconds
+  setTimeout(() => {
+    if (!called) {
+      called = true;
+      console.warn("Hard timeout, running callback");
+      callback();
+    }
+  }, 2000);
 }
 
 waitForFirebase(() => {
