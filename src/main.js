@@ -578,12 +578,11 @@ if (typeof window !== 'undefined') {
   });
 })();
 
-// ===== Apply settings from Firestore (with localStorage fallback) =====
-async function applySettings() {
+// ===== Apply settings =====
+function applySettings() {
+  // First apply from localStorage (instant)
   try {
-    const { doc, getDoc } = window.firebaseFns;
-    const snap = await getDoc(doc(window.firebaseDB, "settings", "main"));
-    const s = snap.exists() ? snap.data() : JSON.parse(localStorage.getItem("rfc_settings") || "{}");
+    const s = JSON.parse(localStorage.getItem("rfc_settings") || "{}");
     document.querySelectorAll('[data-setting="name"]').forEach(el => {
       if (s.name) el.textContent = s.name.toUpperCase();
     });
@@ -593,24 +592,30 @@ async function applySettings() {
     document.querySelectorAll('[data-setting="address"]').forEach(el => {
       if (s.address) el.textContent = s.address;
     });
-    if (s.phone) {
-      localStorage.setItem("rfc_settings", JSON.stringify(s));
-    }
-  } catch(err) {
-    console.error("Settings apply failed, using localStorage:", err);
+  } catch(err) {}
+  
+  // Then fetch from Firestore (async, in background)
+  setTimeout(async () => {
     try {
-      const s = JSON.parse(localStorage.getItem("rfc_settings") || "{}");
-      document.querySelectorAll('[data-setting="name"]').forEach(el => {
-        if (s.name) el.textContent = s.name.toUpperCase();
-      });
-      document.querySelectorAll('[data-setting="hours"]').forEach(el => {
-        if (s.hours) el.textContent = s.hours;
-      });
-      document.querySelectorAll('[data-setting="address"]').forEach(el => {
-        if (s.address) el.textContent = s.address;
-      });
-    } catch(e2) {}
-  }
+      const { doc, getDoc } = window.firebaseFns;
+      const snap = await getDoc(doc(window.firebaseDB, "settings", "main"));
+      if (snap.exists()) {
+        const s = snap.data();
+        document.querySelectorAll('[data-setting="name"]').forEach(el => {
+          if (s.name) el.textContent = s.name.toUpperCase();
+        });
+        document.querySelectorAll('[data-setting="hours"]').forEach(el => {
+          if (s.hours) el.textContent = s.hours;
+        });
+        document.querySelectorAll('[data-setting="address"]').forEach(el => {
+          if (s.address) el.textContent = s.address;
+        });
+        localStorage.setItem("rfc_settings", JSON.stringify(s));
+      }
+    } catch(err) {
+      console.error("Firestore settings fetch failed:", err);
+    }
+  }, 100);
 }
 
 // Call on page load
