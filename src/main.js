@@ -656,7 +656,7 @@ function applySettings() {
 // Call on page load
 if (typeof document !== 'undefined') {
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', applySettings);
+    // applySettings will be called after Firebase is ready
   } else {
     applySettings();
   }
